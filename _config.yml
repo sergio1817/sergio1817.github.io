@@ -7,27 +7,17 @@ url: "https://sergio1817.github.io"
 baseurl: "" 
 locale: "en-US"
 
-# Theme (Section 4.1)
-# Using remote_theme for stability and zero-maintenance
+# Theme Settings (Using Remote Theme to avoid build errors)
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "air" # Professional, clean blue/white theme
+minimal_mistakes_skin: "air" # High contrast, professional academic look
 
-# SEO & Discovery (Section 5)
-keywords: 
-  - Robotics
-  - Control Theory
-  - Quadrotor
-  - C++
-  - Embedded Linux
-  - Reinforcement Learning
-  - MPC
-  - Heudiasyc
-  - Cinvestav
+# SEO Keywords (Section 5.2)
+keywords:
 
 # Author Data (The "Scholar-Practitioner" Persona)
 author:
   name: "Sergio Edgardo Urzúa Correa"
-  avatar: "/assets/images/profile.jpg" # Upload a photo here later
+  avatar: "/assets/images/profile.jpg" # You can add a photo to assets/images/ later
   bio: "Bridging mathematical control theory and real-world embedded engineering."
   location: "Compiègne, France / Mexico"
   links:
@@ -43,15 +33,8 @@ author:
     - label: "ORCID"
       url: "https://orcid.org/0009-0009-4185-9405"
       icon: "fab fa-fw fa-orcid"
-    - label: "HAL Science"
-      url: "https://cv.hal.science/sergiourzua"
-      icon: "fas fa-fw fa-book"
-    - label: "ResearchGate"
-      url: "https://www.researchgate.net/profile/Sergio-Urzua-Correa-2"
-      icon: "fab fa-fw fa-researchgate"
 
-# Build Settings
-markdown: kramdown
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-include-cache
@@ -59,7 +42,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-remote-theme
 
-# Navigation & Defaults
+# Navigation Defaults
 defaults:
   - scope:
       path: ""

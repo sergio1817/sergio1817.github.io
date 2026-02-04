@@ -8,22 +8,12 @@ author_profile: true
 <a href="#" class="btn btn--primary btn--large">Download Full PDF</a>
 
 ### Education
-
 *   **PhD in Robotics (Cotutelle)**
     *   *Heudiasyc (UTC), France & Cinvestav, Mexico* | 2024 - Present
-    *   Focus: Cooperative control of heterogeneous robots.
 *   **M.Sc. in Robotics**
     *   *Cinvestav, Mexico* | 2021 - 2023
-    *   Thesis: Robust control for aerial physical interaction.
 *   **B.Sc. in Mechatronics Engineering**
     *   *Universidad Autónoma de Aguascalientes* | 2016 - 2020
-
-### Professional Experience
-
-*   **Junior Researcher** | *Heudiasyc Laboratory (UTC), France*
-    *   Researching robust control strategies for aerial manipulation and drone-UGV cooperation.
-*   **Research Assistant** | *Cinvestav, Mexico*
-    *   Designed and implemented real-time control algorithms on embedded Linux platforms.
 
 ### Certifications
 *   **SolidWorks:** Certified Professional (CSWP) & Associate (CSWA).

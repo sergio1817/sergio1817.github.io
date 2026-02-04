@@ -10,8 +10,6 @@ I am a **Robotics Engineer and Researcher** specializing in the intersection of 
 
 Currently, I am a PhD candidate in a dual-degree program (**Cotutelle**) between [Cinvestav](https://www.cinvestav.mx/) (Mexico) and(https://www.hds.utc.fr/) (France). My research focuses on giving aerial systems the "sense of touch" through **Robust Force Control** [1] and optimizing autonomous behavior using **Reinforcement Learning**.
 
-I translate complex control algorithms (Lyapunov, MPC) into reliable **C++ code** for embedded Linux platforms.
-
 ### Core Competencies
 
 | Domain | Skills & Technologies |
@@ -20,7 +18,6 @@ I translate complex control algorithms (Lyapunov, MPC) into reliable **C++ code*
 | **Embedded Systems** | C++, Embedded Linux, Multi-threading, Pixhawk, ArduPilot |
 | **AI & Learning** | Python (PyTorch), Reinforcement Learning (Actor-Critic) |
 | **Mechanical Design** | SolidWorks (CSWP Certified), Hardware Integration |
-| **Languages** | Spanish (Native), English (Professional), French (Intermediate) |
 
 ### Current Research
 At **Heudiasyc**, I am working on the cooperative interaction of heterogeneous robots, developing constrained model frameworks that allow drones and ground vehicles to collaborate in complex environments.
