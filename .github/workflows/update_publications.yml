@@ -1,35 +1,39 @@
 
-name: Update Publications from ORCID
-
+name: Update Publications (ORCID)
 on:
   schedule:
-    - cron: '0 0 * * 0' # Runs every Sunday at midnight
-  workflow_dispatch: # Allows manual trigger
+    - cron: '0 0 * * 0' # Weekly on Sunday
+  workflow_dispatch:
 
 jobs:
-  get-publications:
+  update-citations:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # REQUIRED to save the new file
-    
+      contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-        
-      - name: Fetch ORCID Data
-        id: getOrcidPublications
-        uses: TheAlbertDev/get-orcid-publications@v0.1.0
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          orcidId: "0009-0009-4185-9405" # Sergio's ORCID
-          publicationsFilePath: "_data/"
-          publicationsFileName: "orcid_pubs"
-          
-      - name: Commit and Push Changes
+          python-version: '3.x'
+      
+      - name: Install Dependencies
+        run: pip install requests pyyaml
+      
+      - name: Fetch ORCID Data
+        run: python scripts/fetch_orcid.py
+      
+      - name: Commit and Push
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
-          git add _data/orcid_pubs.yml
-          git diff --quiet && git diff --staged --quiet |
-
-| git commit -m "Auto-update publications from ORCID"
-          git push
+          git add _data/publications.yml
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update publications from ORCID"
+            git push
+          fi
