@@ -96,6 +96,12 @@ img {
 .author__urls .social-icons i {
   color: var(--link);
 }
+
+/* Hide skip links header and page meta footer */
+.skip-links,
+.page__meta {
+  display: none !important;
+}
 @media (max-width: 600px) {
   .container {
     padding: 1rem;
@@ -117,4 +123,25 @@ body.dark-mode {
   --link: #4fc3f7;
   background: var(--primary-bg);
   color: var(--primary-text);
+}
+
+/* Force text colors in dark mode (override theme defaults) */
+body.dark-mode .page,
+body.dark-mode .page__content,
+body.dark-mode .page__content *:not(a),
+body.dark-mode .sidebar,
+body.dark-mode .sidebar *:not(a),
+body.dark-mode .author__bio,
+body.dark-mode .author__name,
+body.dark-mode .toc,
+body.dark-mode .notice,
+body.dark-mode .archive__item-title,
+body.dark-mode .archive__item-excerpt {
+  color: var(--primary-text) !important;
+}
+
+body.dark-mode a,
+body.dark-mode .page__content a,
+body.dark-mode .sidebar a {
+  color: var(--link) !important;
 }
