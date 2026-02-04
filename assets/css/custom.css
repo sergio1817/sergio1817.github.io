@@ -84,12 +84,6 @@ img {
   max-width: 100%;
   border-radius: var(--border-radius);
 }
-header, nav, footer {
-  background: #f8f8f8;
-  border-radius: var(--border-radius);
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-}
 
 /* Keep navigation text color consistent */
 .masthead, .masthead a, .greedy-nav a {
@@ -123,7 +117,4 @@ body.dark-mode {
   --link: #4fc3f7;
   background: var(--primary-bg);
   color: var(--primary-text);
-}
-header.dark-mode, nav.dark-mode, footer.dark-mode {
-  background: #23272a;
 }
