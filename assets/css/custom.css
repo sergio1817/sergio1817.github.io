@@ -53,18 +53,6 @@ body,
   cursor: pointer;
 }
 
-.darkmode-toggle {
-  position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
-  z-index: 999;
-  padding: 0.6rem 1rem;
-  border-radius: 999px;
-  border: 1px solid var(--accent);
-  background: var(--primary-bg);
-  color: var(--primary-text);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
 a {
   color: var(--link);
   text-decoration: none;
@@ -133,94 +121,4 @@ img {
     transition: none !important;
     scroll-behavior: auto !important;
   }
-}
-/* Dark mode styles */
-body.dark-mode {
-  --primary-bg: #0f1115;
-  --primary-text: #e7eaee;
-  --accent: #7dd3fc;
-  --link: #7dd3fc;
-  --nav-text: #e7eaee;
-  --nav-bg: #12151b;
-  --nav-border: #1f2430;
-  background: var(--primary-bg);
-  color: var(--primary-text);
-}
-
-/* Dark mode aesthetics */
-body.dark-mode .page,
-body.dark-mode .page__content,
-body.dark-mode .sidebar,
-body.dark-mode .toc {
-  background: #141821;
-  border-radius: var(--border-radius);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-}
-
-body.dark-mode .page__content,
-body.dark-mode .sidebar {
-  padding: 1.25rem;
-}
-
-body.dark-mode .page__content h1,
-body.dark-mode .page__content h2,
-body.dark-mode .page__content h3 {
-  color: #f5f7fa !important;
-}
-
-body.dark-mode .page__content p,
-body.dark-mode .page__content li,
-body.dark-mode .sidebar p,
-body.dark-mode .sidebar li {
-  color: #d7dbe2 !important;
-}
-
-body.dark-mode hr {
-  border-color: #242b36;
-}
-
-body.dark-mode code,
-body.dark-mode pre {
-  background: #0b0f14;
-  color: #e6edf3;
-  border-radius: 6px;
-  border: 1px solid #1f2430;
-}
-
-body.dark-mode table {
-  background: #141821;
-  color: #d7dbe2;
-}
-
-body.dark-mode table th,
-body.dark-mode table td {
-  border-color: #242b36;
-}
-
-body.dark-mode .notice,
-body.dark-mode .archive__item-title,
-body.dark-mode .archive__item-excerpt {
-  background: #1b1e21;
-  border-radius: var(--border-radius);
-}
-
-/* Force text colors in dark mode (override theme defaults) */
-body.dark-mode .page,
-body.dark-mode .page__content,
-body.dark-mode .page__content *:not(a),
-body.dark-mode .sidebar,
-body.dark-mode .sidebar *:not(a),
-body.dark-mode .author__bio,
-body.dark-mode .author__name,
-body.dark-mode .toc,
-body.dark-mode .notice,
-body.dark-mode .archive__item-title,
-body.dark-mode .archive__item-excerpt {
-  color: var(--primary-text) !important;
-}
-
-body.dark-mode a,
-body.dark-mode .page__content a,
-body.dark-mode .sidebar a {
-  color: var(--link) !important;
 }
