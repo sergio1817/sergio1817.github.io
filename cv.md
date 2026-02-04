@@ -11,14 +11,14 @@ author_profile: true
 ### Education
 *   **PhD in Robotics (Cotutelle)** | *Heudiasyc (UTC), France & Cinvestav, Mexico* | 2024 - Present
 *   **M.Sc. in Robotics** | *Cinvestav, Mexico* | 2021 - 2023
-    *   Thesis: "Modelling an control of a quadrotor subjec to to rolling constraints."
+    *   Thesis: "Modelling an control of a quadrotor subject to to rolling constraints."
 *   **B.Sc. in Robotics Engineering** | *Universidad Autónoma de Aguascalientes* | 2016 - 2020
 
 ### Professional Experience
 *   **Junior Researcher** | *Heudiasyc Laboratory (UTC), France*
-    *   Researching robust control strategies for aerial manipulation and drone-UGV cooperation.
+    *   Researching robust control strategies for aerial interaction and drone-UGV cooperation.
 *   **Research Assistant** | *Cinvestav, Mexico*
-    *   Designed and implemented real-time control algorithms on embedded Linux platforms.
+    *   Modelling and control of a quadrotor subject to non-holonomic constraints.
 
 ### Certifications
 *   **SolidWorks:** Certified Professional [(CSWP)](https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-JPRFG2MY8Z) & Associate [(CSWA)](https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-UTLK6NRCJ8).
