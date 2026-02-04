@@ -53,6 +53,14 @@ def fetch_works():
                     "url": url,
                     "journal": journal
                 })
+        # Sort by year (descending), unknown years last
+        def year_key(item):
+            try:
+                return int(item.get("year", 0))
+            except ValueError:
+                return 0
+
+        works.sort(key=year_key, reverse=True)
         return works
     except Exception as e:
         print(f"Exception occurred: {e}")

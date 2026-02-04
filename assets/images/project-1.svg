@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#f0f4f8"/>
+  <circle cx="200" cy="225" r="80" fill="#4fc3f7"/>
+  <rect x="340" y="165" width="300" height="120" rx="12" fill="#90caf9"/>
+  <text x="400" y="235" font-family="Arial" font-size="28" fill="#1a237e">Tactile Drone</text>
+</svg>

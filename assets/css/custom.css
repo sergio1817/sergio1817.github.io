@@ -1,0 +1,87 @@
+/* Custom CSS for modern look, responsive design, and dark mode */
+:root {
+  --primary-bg: #fff;
+  --primary-text: #222;
+  --accent: #007acc;
+  --link: #007acc;
+  --border-radius: 8px;
+  --font-main: 'Segoe UI', Arial, sans-serif;
+}
+body {
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.btn, .darkmode-toggle {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.darkmode-toggle {
+  margin-left: 1rem;
+  background: transparent;
+  color: var(--primary-text);
+  border-color: var(--primary-text);
+}
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+img {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+}
+header, nav, footer {
+  background: #f8f8f8;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Dark mode styles */
+body.dark-mode {
+  --primary-bg: #181a1b;
+  --primary-text: #eaeaea;
+  --accent: #4fc3f7;
+  --link: #4fc3f7;
+  background: var(--primary-bg);
+  color: var(--primary-text);
+}
+header.dark-mode, nav.dark-mode, footer.dark-mode {
+  background: #23272a;
+}

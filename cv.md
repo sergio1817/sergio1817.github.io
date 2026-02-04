@@ -21,5 +21,5 @@ author_profile: true
     *   Designed and implemented real-time control algorithms on embedded Linux platforms.
 
 ### Certifications
-*   **SolidWorks:** Certified Professional [(CSWP)]{https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-JPRFG2MY8Z} & Associate [(CSWA)]{https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-UTLK6NRCJ8}.
+*   **SolidWorks:** Certified Professional [(CSWP)](https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-JPRFG2MY8Z) & Associate [(CSWA)](https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-UTLK6NRCJ8).
 *   **Languages:** Spanish (Native), English (Linguasckill 167 B2), French (A2).

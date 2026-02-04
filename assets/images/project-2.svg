@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#f7f7f7"/>
+  <path d="M120 340 L280 200 L440 260 L600 140" stroke="#007acc" stroke-width="10" fill="none"/>
+  <text x="220" y="320" font-family="Arial" font-size="28" fill="#0d47a1">Energy-Efficient RL</text>
+</svg>

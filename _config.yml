@@ -7,9 +7,18 @@ url: "https://sergio1817.github.io"
 baseurl: "" 
 locale: "en-US"
 
+# Analytics (Plausible)
+plausible_domain: "sergio1817.github.io"
+
 # Theme
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "air"
+
+# Custom assets
+custom_css:
+  - /assets/css/custom.css
+custom_js:
+  - /assets/js/site.js
 
 # Author Data
 author:

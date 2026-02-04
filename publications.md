@@ -17,15 +17,20 @@ My research outputs are indexed on [Google Scholar](https://scholar.google.com/c
 *This list updates automatically via GitHub Actions.*
 
 {% if site.data.publications %}
-  <ul>
-  {% for pub in site.data.publications %}
-    <li>
-      <strong>{{ pub.title }}</strong> ({{ pub.year }})<br>
-      <em>{{ pub.journal }}</em><br>
-      {% if pub.url!= "" %}<a href="{{ pub.url }}">View Paper</a>{% endif %}
-    </li>
+  {% assign sorted_pubs = site.data.publications | sort: "year" | reverse %}
+  {% assign pubs_by_year = sorted_pubs | group_by_exp: "item", "item.year" %}
+  {% for group in pubs_by_year %}
+    <h4>{{ group.name }}</h4>
+    <ul>
+      {% for pub in group.items %}
+        <li>
+          <strong>{{ pub.title }}</strong><br>
+          <em>{{ pub.journal }}</em><br>
+          {% if pub.url!= "" %}<a href="{{ pub.url }}">View Paper</a>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
   {% endfor %}
-  </ul>
 {% else %}
   <p><em>Loading publications from ORCID... (Wait for the 'Update Publications' workflow to run).</em></p>
 {% endif %}
