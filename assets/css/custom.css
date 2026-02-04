@@ -5,6 +5,8 @@
   --accent: #007acc;
   --link: #007acc;
   --nav-text: #222;
+  --nav-bg: #ffffff;
+  --nav-border: #e7e9ee;
   --border-radius: 8px;
   --font-main: 'Segoe UI', Arial, sans-serif;
 }
@@ -85,9 +87,26 @@ img {
   border-radius: var(--border-radius);
 }
 
-/* Keep navigation text color consistent */
+/* Navigation bar styling */
+.masthead {
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-border);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.masthead__inner-wrap,
+.greedy-nav {
+  padding: 0.4rem 0.75rem;
+}
+
 .masthead, .masthead a, .greedy-nav a {
   color: var(--nav-text) !important;
+  font-weight: 600;
+}
+
+.greedy-nav a:hover,
+.greedy-nav a:focus-visible {
+  color: var(--accent) !important;
 }
 
 /* Author sidebar icons follow theme */
@@ -117,10 +136,13 @@ img {
 }
 /* Dark mode styles */
 body.dark-mode {
-  --primary-bg: #181a1b;
-  --primary-text: #eaeaea;
-  --accent: #4fc3f7;
-  --link: #4fc3f7;
+  --primary-bg: #0f1115;
+  --primary-text: #e7eaee;
+  --accent: #7dd3fc;
+  --link: #7dd3fc;
+  --nav-text: #e7eaee;
+  --nav-bg: #12151b;
+  --nav-border: #1f2430;
   background: var(--primary-bg);
   color: var(--primary-text);
 }
@@ -130,8 +152,9 @@ body.dark-mode .page,
 body.dark-mode .page__content,
 body.dark-mode .sidebar,
 body.dark-mode .toc {
-  background: #1f2224;
+  background: #141821;
   border-radius: var(--border-radius);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
 body.dark-mode .page__content,
@@ -149,28 +172,29 @@ body.dark-mode .page__content p,
 body.dark-mode .page__content li,
 body.dark-mode .sidebar p,
 body.dark-mode .sidebar li {
-  color: #e3e6ea !important;
+  color: #d7dbe2 !important;
 }
 
 body.dark-mode hr {
-  border-color: #2b2f33;
+  border-color: #242b36;
 }
 
 body.dark-mode code,
 body.dark-mode pre {
-  background: #0f1113;
+  background: #0b0f14;
   color: #e6edf3;
   border-radius: 6px;
+  border: 1px solid #1f2430;
 }
 
 body.dark-mode table {
-  background: #1b1e21;
-  color: #e3e6ea;
+  background: #141821;
+  color: #d7dbe2;
 }
 
 body.dark-mode table th,
 body.dark-mode table td {
-  border-color: #2b2f33;
+  border-color: #242b36;
 }
 
 body.dark-mode .notice,

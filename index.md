@@ -6,7 +6,8 @@ author_profile: true
 excerpt: "Robotics Engineer & PhD Researcher specializing in Aerial Systems."
 ---
 
-I am a **Robotics Engineer and Junior Researcher** bridging the gap between advanced mathematical control theory and real-world embedded implementation. 
+I am a **Robotics Engineer and Junior Researcher** 
+<!-- bridging the gap between advanced mathematical control theory and real-world embedded implementation.  -->
 
 Currently, I am a PhD candidate in a **Cotutelle (Dual-Degree)** program between **Cinvestav (Mexico)** and **Heudiasyc - UTC (France)**. My research focuses on giving aerial systems the "sense of touch" through **Robust Force Control** and optimizing autonomy using **Reinforcement Learning**.
 
