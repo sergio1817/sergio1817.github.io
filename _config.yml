@@ -4,18 +4,28 @@ title: Sergio Edgardo Urzúa Correa
 name: Sergio Edgardo Urzúa Correa
 description: "Robotics Engineer & PhD Researcher | Aerial Robotics, Robust Control, Embedded Systems"
 url: "https://sergio1817.github.io"
-baseurl: "" # Keep empty for root domain
+baseurl: "" 
 locale: "en-US"
 
-# Theme: Minimal Mistakes (Remote)
+# Theme Settings
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "air" # Clean professional look
 
-# Author Details (Accurate from CV)
+# SEO Keywords
+keywords:
+  - Robotics
+  - Aerial Manipulation
+  - Robust Control
+  - Reinforcement Learning
+  - Heterogeneous Robots
+  - Heudiasyc
+  - Cinvestav
+
+# Author Data (From CV & Profiles)
 author:
   name: "Sergio Edgardo Urzúa Correa"
-  avatar: "/assets/images/profile.jpg" # Add your photo to this path
-  bio: "PhD Candidate (Cotutelle) at Heudiasyc (UTC) & Cinvestav. Specializing in Aerial Physical Interaction and Robust Control."
+  avatar: "/assets/images/profile.jpg" # Add your photo to assets/images/
+  bio: "PhD Researcher (Cotutelle) at Heudiasyc (UTC) & Cinvestav. Bridging Control Theory and Embedded Engineering."
   location: "Compiègne, France / Mexico"
   links:
     - label: "LinkedIn"
@@ -33,9 +43,6 @@ author:
     - label: "ResearchGate"
       url: "https://www.researchgate.net/profile/Sergio-Urzua-Correa-2"
       icon: "fab fa-fw fa-researchgate"
-
-# SEO Keywords (Section 5)
-keywords:
 
 # Plugins
 plugins:

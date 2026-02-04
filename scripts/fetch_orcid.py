@@ -1,7 +1,8 @@
-
 import requests
 import yaml
+import os
 
+# Sergio's ORCID ID
 ORCID_ID = "0009-0009-4185-9405"
 API_URL = f"https://pub.orcid.org/v3.0/{ORCID_ID}/works"
 HEADERS = {"Accept": "application/json"}
@@ -10,27 +11,39 @@ def fetch_works():
     print(f"Fetching ORCID data for {ORCID_ID}...")
     try:
         response = requests.get(API_URL, headers=HEADERS)
-        response.raise_for_status()
+        if response.status_code!= 200:
+            print(f"Error: Received status code {response.status_code}")
+            return
+            
         data = response.json()
-        
         works =
-        for group in data.get('group',):
+        
+        # Check if 'group' exists
+        if 'group' not in data:
+            print("No 'group' key found in ORCID response.")
+            return
+
+        for group in data['group']:
             for summary in group.get('work-summary',):
-                title = summary.get('title', {}).get('title', {}).get('value', 'Untitled')
+                # Safely get title
+                title = "Untitled"
+                if summary.get('title') and summary['title'].get('title'):
+                    title = summary['title']['title'].get('value', 'Untitled')
                 
-                # Extract Year
-                try:
-                    year = summary.get('publication-date', {}).get('year', {}).get('value', 'n.d.')
-                except:
-                    year = 'n.d.'
+                # Safely get year
+                year = "n.d."
+                if summary.get('publication-date') and summary['publication-date'].get('year'):
+                    year = summary['publication-date']['year'].get('value', 'n.d.')
                 
-                # Extract URL
+                # Safely get URL
                 url = ""
                 if summary.get('url'):
-                    url = summary.get('url', {}).get('value', "")
+                    url = summary['url'].get('value', "")
                 
-                # Extract Journal
-                journal = summary.get('journal-title', {}).get('value', 'Publication')
+                # Safely get Journal
+                journal = "Publication"
+                if summary.get('journal-title'):
+                    journal = summary['journal-title'].get('value', 'Publication')
                 
                 works.append({
                     "title": title,
@@ -40,14 +53,18 @@ def fetch_works():
                 })
         return works
     except Exception as e:
-        print(f"Error fetching data: {e}")
+        print(f"Exception occurred: {e}")
         return
 
 if __name__ == "__main__":
     works = fetch_works()
+    
+    # Ensure _data directory exists
+    os.makedirs("_data", exist_ok=True)
+    
     if works:
         with open("_data/publications.yml", "w", encoding="utf-8") as f:
             yaml.dump(works, f, allow_unicode=True)
-        print("Publications updated.")
+        print(f"Successfully updated {len(works)} publications.")
     else:
         print("No publications found or error occurred.")

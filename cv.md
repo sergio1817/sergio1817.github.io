@@ -21,4 +21,4 @@ author_profile: true
 
 ### Certifications
 *   **SolidWorks:** Certified Professional (CSWP) & Associate (CSWA).
-*   **Languages:** Spanish (Native), English (Linguaskill 167 B2), French (DELF A2).
+*   **Languages:** Spanish (Native), English (TOEFL ITP 543), French (DELF A2).
