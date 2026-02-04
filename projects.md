@@ -35,5 +35,5 @@ toc_label: "Projects"
 **Role:** Lead Researcher | **Stack:** Sliding mode control, heterogenous robots
 
 *   **Objective:** Coordinate ground robots (UGVs) and aerial robots (UAVs) for complex tasks.
-*   **Solution:** Developing a cooperative and constrained model and using Sliding Mode control. T
+*   **Solution:** Developing a cooperative and constrained model and using Sliding Mode control.
 <!-- *   **Links:** [Thesis Outline](https://github.com/sergio1817) -->
