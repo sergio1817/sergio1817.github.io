@@ -125,6 +125,61 @@ body.dark-mode {
   color: var(--primary-text);
 }
 
+/* Dark mode aesthetics */
+body.dark-mode .page,
+body.dark-mode .page__content,
+body.dark-mode .sidebar,
+body.dark-mode .toc {
+  background: #1f2224;
+  border-radius: var(--border-radius);
+}
+
+body.dark-mode .page__content,
+body.dark-mode .sidebar {
+  padding: 1.25rem;
+}
+
+body.dark-mode .page__content h1,
+body.dark-mode .page__content h2,
+body.dark-mode .page__content h3 {
+  color: #f5f7fa !important;
+}
+
+body.dark-mode .page__content p,
+body.dark-mode .page__content li,
+body.dark-mode .sidebar p,
+body.dark-mode .sidebar li {
+  color: #e3e6ea !important;
+}
+
+body.dark-mode hr {
+  border-color: #2b2f33;
+}
+
+body.dark-mode code,
+body.dark-mode pre {
+  background: #0f1113;
+  color: #e6edf3;
+  border-radius: 6px;
+}
+
+body.dark-mode table {
+  background: #1b1e21;
+  color: #e3e6ea;
+}
+
+body.dark-mode table th,
+body.dark-mode table td {
+  border-color: #2b2f33;
+}
+
+body.dark-mode .notice,
+body.dark-mode .archive__item-title,
+body.dark-mode .archive__item-excerpt {
+  background: #1b1e21;
+  border-radius: var(--border-radius);
+}
+
 /* Force text colors in dark mode (override theme defaults) */
 body.dark-mode .page,
 body.dark-mode .page__content,
