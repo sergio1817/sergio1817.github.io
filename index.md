@@ -40,18 +40,18 @@ I focus on robust control and embedded implementation for aerial robotics, with 
 [Download PDF CV](/assets/Sergio_U_CV.pdf){: .btn .btn--primary target="_blank"}
 
 ## Latest GitHub Activity
-{% if site.data.github %}
-	<ul>
-	{% for repo in site.data.github %}
-		<li>
-			<strong><a href="{{ repo.url }}">{{ repo.name }}</a></strong>
-			{% if repo.description %} — {{ repo.description }}{% endif %}
-			{% if repo.language %} ({{ repo.language }}){% endif %}
-		</li>
-	{% endfor %}
-	</ul>
+{% if site.data.github and site.data.github.size > 0 %}
+<ul>
+{% for repo in site.data.github %}
+  <li>
+    <strong><a href="{{ repo.url }}">{{ repo.name }}</a></strong>
+    {% if repo.description %} — {{ repo.description }}{% endif %}
+    {% if repo.language %} ({{ repo.language }}){% endif %}
+  </li>
+{% endfor %}
+</ul>
 {% else %}
-	<p><em>Run the GitHub activity script to load recent repositories.</em></p>
+<p><em>Run the GitHub activity script to load recent repositories.</em></p>
 {% endif %}
 
 ## Contact

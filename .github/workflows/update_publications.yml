@@ -1,7 +1,5 @@
 name: Update Publications (ORCID)
 on:
-  push:
-    branches: ["main", "master"]
   schedule:
     - cron: '0 0 * * 0' # Weekly
   workflow_dispatch:

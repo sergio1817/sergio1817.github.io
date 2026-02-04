@@ -18,7 +18,7 @@ My research outputs are indexed on [Google Scholar](https://scholar.google.com/c
 
 {% if site.data.publications %}
   {% assign sorted_pubs = site.data.publications | sort: "year" | reverse %}
-  {% assign pubs_by_year = sorted_pubs | group_by_exp: "item", "item.year" %}
+  {% assign pubs_by_year = sorted_pubs | group_by: "year" %}
   {% for group in pubs_by_year %}
     <h4>{{ group.name }}</h4>
     <ul>
@@ -26,7 +26,7 @@ My research outputs are indexed on [Google Scholar](https://scholar.google.com/c
         <li>
           <strong>{{ pub.title }}</strong><br>
           <em>{{ pub.journal }}</em><br>
-          {% if pub.url!= "" %}<a href="{{ pub.url }}">View Paper</a>{% endif %}
+          {% if pub.url != "" %}<a href="{{ pub.url }}">View Paper</a>{% endif %}
         </li>
       {% endfor %}
     </ul>
