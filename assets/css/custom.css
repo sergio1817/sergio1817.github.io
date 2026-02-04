@@ -4,6 +4,7 @@
   --primary-text: #222;
   --accent: #007acc;
   --link: #007acc;
+  --nav-text: #222;
   --border-radius: 8px;
   --font-main: 'Segoe UI', Arial, sans-serif;
 }
@@ -25,6 +26,19 @@ body {
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+}
+
+.darkmode-toggle {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 999;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 a {
   color: var(--link);
@@ -52,6 +66,18 @@ header, nav, footer {
   border-radius: var(--border-radius);
   margin-bottom: 1.5rem;
   padding: 1rem;
+}
+
+/* Keep navigation text color consistent */
+.masthead, .masthead a, .greedy-nav a {
+  color: var(--nav-text) !important;
+}
+
+/* Author sidebar icons follow theme */
+.author__urls a,
+.author__urls .social-icons a,
+.author__urls .social-icons i {
+  color: var(--link);
 }
 @media (max-width: 600px) {
   .container {

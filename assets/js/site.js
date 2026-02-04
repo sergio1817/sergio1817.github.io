@@ -10,6 +10,31 @@
     setDarkMode(prefersDark);
   }
 
+  function applySavedMode() {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark') return setDarkMode(true);
+    if (saved === 'light') return setDarkMode(false);
+    applySystemMode();
+  }
+
+  function ensureToggleButton() {
+    if (document.getElementById('darkmode-toggle')) return;
+    const btn = document.createElement('button');
+    btn.id = 'darkmode-toggle';
+    btn.type = 'button';
+    btn.className = 'darkmode-toggle';
+    btn.setAttribute('aria-label', 'Toggle dark mode');
+    btn.textContent = 'Toggle dark mode';
+    document.body.appendChild(btn);
+
+    btn.addEventListener('click', () => {
+      const isDark = document.body.classList.contains('dark-mode');
+      const next = !isDark;
+      setDarkMode(next);
+      localStorage.setItem('theme', next ? 'dark' : 'light');
+    });
+  }
+
   function enableLazyLoading() {
     document.querySelectorAll('img:not([loading])').forEach(img => {
       img.setAttribute('loading', 'lazy');
@@ -18,7 +43,7 @@
   }
 
   function init() {
-    applySystemMode();
+    applySavedMode();
     if (window.matchMedia) {
       const media = window.matchMedia('(prefers-color-scheme: dark)');
       if (media.addEventListener) {
@@ -27,6 +52,7 @@
         media.addListener(applySystemMode);
       }
     }
+    ensureToggleButton();
     enableLazyLoading();
   }
 
