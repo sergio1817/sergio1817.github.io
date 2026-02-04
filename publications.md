@@ -5,7 +5,7 @@ title: "Publications"
 author_profile: true
 ---
 
-My research outputs are indexed on [Google Scholar](https://scholar.google.com/citations?user=qwpVD6cAAAAJ), [IEEE Xplore](https://ieeexplore.ieee.org/author/883716826371599), and [HAL](https://cv.hal.science/sergiourzua).
+<!-- My research outputs are indexed on [Google Scholar](https://scholar.google.com/citations?user=qwpVD6cAAAAJ), [IEEE Xplore](https://ieeexplore.ieee.org/author/883716826371599), and [HAL](https://cv.hal.science/sergiourzua). -->
 
 ### Selected Highlights
 *   **S. E. Urzúa**, et al. "3D Force Control of a Quadrotor subject to 2D Non-holonomic Contact with an Spherical Tip." *20th International Conference on Electrical Engineering, Computing Science and Automatic Control, CCE*, 2023. [View on IEEE](https://ieeexplore.ieee.org/document/10332838)
@@ -14,7 +14,7 @@ My research outputs are indexed on [Google Scholar](https://scholar.google.com/c
 <hr>
 
 ### Full List (Auto-Synced from ORCID)
-*This list updates automatically via GitHub Actions.*
+<!-- *This list updates automatically via GitHub Actions.* -->
 
 {% if site.data.publications %}
 {% assign sorted_pubs = site.data.publications | sort: "year" | reverse %}

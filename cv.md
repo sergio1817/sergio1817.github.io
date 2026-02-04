@@ -11,8 +11,8 @@ author_profile: true
 ### Education
 *   **PhD in Robotics (Cotutelle)** | *Heudiasyc (UTC), France & Cinvestav, Mexico* | 2024 - Present
 *   **M.Sc. in Robotics** | *Cinvestav, Mexico* | 2021 - 2023
-    *   Thesis: "Robust control for aerial physical interaction."
-*   **B.Sc. in Mechatronics Engineering** | *Universidad Autónoma de Aguascalientes* | 2016 - 2020
+    *   Thesis: "Modelling an control of a quadrotor subjec to to rolling constraints."
+*   **B.Sc. in Robotics Engineering** | *Universidad Autónoma de Aguascalientes* | 2016 - 2020
 
 ### Professional Experience
 *   **Junior Researcher** | *Heudiasyc Laboratory (UTC), France*
@@ -22,4 +22,4 @@ author_profile: true
 
 ### Certifications
 *   **SolidWorks:** Certified Professional [(CSWP)](https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-JPRFG2MY8Z) & Associate [(CSWA)](https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-UTLK6NRCJ8).
-*   **Languages:** Spanish (Native), English (Linguasckill 167 B2), French (A2).
+*   **Languages:** Spanish (Native), English (Linguaskill 167 B2), French (A2).

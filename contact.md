@@ -9,7 +9,7 @@ author_profile: true
 
 Feel free to reach out for collaborations, research opportunities, or speaking invitations.
 
-- Email: [sergio.urzua@proton.me](mailto:sergio.urzua@proton.me)
+- Email: [sergio.urzua@cinvestav.mx](mailto:sergio.urzua@cinvestav.mx)
 - LinkedIn: [sergio-uc](https://www.linkedin.com/in/sergio-uc)
 - GitHub: [sergio1817](https://github.com/sergio1817)
 
