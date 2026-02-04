@@ -17,6 +17,29 @@ body {
   line-height: 1.6;
 }
 
+body,
+.page,
+.page__content,
+.page__content p,
+.page__content li,
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6,
+.page__content blockquote,
+.page__content table,
+.page__content th,
+.page__content td,
+.sidebar,
+.sidebar p,
+.sidebar li,
+.author__name,
+.author__bio {
+  color: var(--primary-text);
+}
+
 .btn {
   display: inline-block;
   padding: 0.5rem 1rem;

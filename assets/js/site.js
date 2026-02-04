@@ -6,6 +6,7 @@
   }
 
   function applySystemMode() {
+    if (localStorage.getItem('theme')) return;
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     setDarkMode(prefersDark);
   }
@@ -18,14 +19,18 @@
   }
 
   function ensureToggleButton() {
-    if (document.getElementById('darkmode-toggle')) return;
-    const btn = document.createElement('button');
-    btn.id = 'darkmode-toggle';
-    btn.type = 'button';
-    btn.className = 'darkmode-toggle';
-    btn.setAttribute('aria-label', 'Toggle dark mode');
-    btn.textContent = 'Toggle dark mode';
-    document.body.appendChild(btn);
+    let btn = document.getElementById('darkmode-toggle');
+    if (!btn) {
+      btn = document.createElement('button');
+      btn.id = 'darkmode-toggle';
+      btn.type = 'button';
+      btn.className = 'darkmode-toggle';
+      btn.setAttribute('aria-label', 'Toggle dark mode');
+      btn.textContent = 'Toggle dark mode';
+      document.body.appendChild(btn);
+    }
+    if (btn.dataset.bound === '1') return;
+    btn.dataset.bound = '1';
 
     btn.addEventListener('click', () => {
       const isDark = document.body.classList.contains('dark-mode');
