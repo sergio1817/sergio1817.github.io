@@ -16,6 +16,8 @@ def fetch_works():
             return
             
         data = response.json()
+        
+        # FIX: Initialize empty list correctly
         works =
         
         # Check if 'group' exists
@@ -57,14 +59,14 @@ def fetch_works():
         return
 
 if __name__ == "__main__":
-    works = fetch_works()
+    works_list = fetch_works()
     
     # Ensure _data directory exists
     os.makedirs("_data", exist_ok=True)
     
-    if works:
+    if works_list:
         with open("_data/publications.yml", "w", encoding="utf-8") as f:
-            yaml.dump(works, f, allow_unicode=True)
-        print(f"Successfully updated {len(works)} publications.")
+            yaml.dump(works_list, f, allow_unicode=True)
+        print(f"Successfully updated {len(works_list)} publications.")
     else:
         print("No publications found or error occurred.")

@@ -7,25 +7,15 @@ url: "https://sergio1817.github.io"
 baseurl: "" 
 locale: "en-US"
 
-# Theme Settings
+# Theme
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "air" # Clean professional look
+minimal_mistakes_skin: "air"
 
-# SEO Keywords
-keywords:
-  - Robotics
-  - Aerial Manipulation
-  - Robust Control
-  - Reinforcement Learning
-  - Heterogeneous Robots
-  - Heudiasyc
-  - Cinvestav
-
-# Author Data (From CV & Profiles)
+# Author Data
 author:
   name: "Sergio Edgardo Urzúa Correa"
-  avatar: "/assets/images/profile.jpg" # Add your photo to assets/images/
-  bio: "PhD Researcher (Cotutelle) at Heudiasyc (UTC) & Cinvestav. Bridging Control Theory and Embedded Engineering."
+  avatar: "/assets/images/profile.jpg"
+  bio: "PhD Researcher at Heudiasyc (UTC) & Cinvestav. Bridging Control Theory and Embedded Engineering."
   location: "Compiègne, France / Mexico"
   links:
     - label: "LinkedIn"
@@ -40,9 +30,6 @@ author:
     - label: "ORCID"
       url: "https://orcid.org/0009-0009-4185-9405"
       icon: "fab fa-fw fa-orcid"
-    - label: "ResearchGate"
-      url: "https://www.researchgate.net/profile/Sergio-Urzua-Correa-2"
-      icon: "fab fa-fw fa-researchgate"
 
 # Plugins
 plugins:
@@ -52,7 +39,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-remote-theme
 
-# Defaults
 defaults:
   - scope:
       path: ""
