@@ -18,14 +18,14 @@ toc_label: "Projects"
     *   Validated on a custom quadrotor with a spherical end-effector.[1]
 
 ## 2. Energy-Efficient Flight via Reinforcement Learning
-**Role:** Algorithm Engineer | **Stack:** Python, PyTorch, C++
+**Role:** Algorithm Engineer | **Stack:** MATLAB/Simulink, C++
 
 *   **Objective:** Extend operational flight time for autonomous missions.
 *   **Solution:** Replaced standard PID loops with an **Actor-Critic Reinforcement Learning** agent trained to minimize energy expenditure.
 *   **Outcome:** Measurable reduction in battery consumption during station-keeping tasks; deployed on embedded hardware using multi-threading.
 
 ## 3. Cooperative Heterogeneous Fleets (PhD Thesis)
-**Role:** Systems Architect | **Stack:** NMPC, ROS, Distributed Systems
+**Role:** Systems Architect | **Stack:** Sliding mode control, ROS, Distributed Systems
 
 *   **Objective:** Coordinate ground robots (UGVs) and aerial robots (UAVs) for complex tasks.
-*   **Solution:** Developing a **Constrained Model Framework** using Nonlinear Model Predictive Control (NMPC). This allows diverse agents to subscribe to shared tasks without collision or deadlock.
+*   **Solution:** Developing a **Constrained Model Framework** using Sliding Mode control. This allows diverse agents to subscribe to shared tasks without collision or deadlock.

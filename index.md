@@ -8,13 +8,13 @@ excerpt: "Robotics Engineer & PhD Researcher specializing in Aerial Systems."
 
 I am a **Robotics Engineer and Junior Researcher** bridging the gap between advanced mathematical control theory and real-world embedded implementation. 
 
-Currently, I am a PhD candidate in a **Cotutelle (Dual-Degree)** program between **Cinvestav (Mexico)** and **Heudiasyc - UTC (France)**. My research focuses on giving aerial systems the "sense of touch" through **Robust Force Control** and optimizing autonomy using **Reinforcement Learning**.[1]
+Currently, I am a PhD candidate in a **Cotutelle (Dual-Degree)** program between **Cinvestav (Mexico)** and **Heudiasyc - UTC (France)**. My research focuses on giving aerial systems the "sense of touch" through **Robust Force Control** and optimizing autonomy using **Reinforcement Learning**.
 
 ### Core Competencies
 
 | Domain | Skills & Tools |
 | :--- | :--- |
-| **Robotics Control** | Robust Control, NMPC, Sliding Mode, Lyapunov Stability |
+| **Robotics Control** | Robust Control, Force-Position Control, Sliding Mode, Lyapunov Stability |
 | **Embedded Systems** | C++, Embedded Linux, Multi-threading, Pixhawk, ArduPilot |
 | **AI & Learning** | Python (PyTorch), Reinforcement Learning (Actor-Critic) |
 | **Mechanical Design** | SolidWorks (CSWP Certified), Rapid Prototyping |

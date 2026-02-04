@@ -30,6 +30,12 @@ author:
     - label: "ORCID"
       url: "https://orcid.org/0009-0009-4185-9405"
       icon: "fab fa-fw fa-orcid"
+    - label: "Scopus"
+      url: "https://www.scopus.com/authid/detail.uri?authorId=58788376200"
+      icon: "fas fa-fw fa-database"
+    - label: "Web of Science"
+      url: "https://www.webofscience.com/wos/author/record/JZT-0853-2024"
+      icon: "fas fa-fw fa-globe"
 
 # Plugins
 plugins:
