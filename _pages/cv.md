@@ -1,10 +1,9 @@
 ---
+layout: single
 permalink: /cv/
 title: "Curriculum Vitae"
 author_profile: true
 ---
-
-(#) *<-- Upload your PDF to assets/ and link it here*
 
 ### Education
 *   **PhD in Robotics (Cotutelle)** | *Heudiasyc (UTC), France & Cinvestav, Mexico* | 2024 - Present
@@ -14,4 +13,3 @@ author_profile: true
 ### Certifications
 *   Certified SOLIDWORKS Professional (CSWP)
 *   Certified SOLIDWORKS Associate (CSWA)
-
