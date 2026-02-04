@@ -17,8 +17,8 @@ def fetch_works():
             
         data = response.json()
         
-        # FIX: Initialize empty list correctly
-        works =
+        # Initialize empty list
+        works = []
         
         # Check if 'group' exists
         if 'group' not in data:
@@ -26,7 +26,7 @@ def fetch_works():
             return
 
         for group in data['group']:
-            for summary in group.get('work-summary',):
+            for summary in group.get('work-summary', []):
                 # Safely get title
                 title = "Untitled"
                 if summary.get('title') and summary['title'].get('title'):
