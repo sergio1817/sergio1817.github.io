@@ -1,9 +1,14 @@
 source "https://rubygems.org"
 
-# GitHub Pages gem includes Jekyll and supported plugins
-# https://pages.github.com/versions/
-gem "github-pages", group: :jekyll_plugins
-
-# Explicit plugins used by the site
-
+gem "jekyll", "~> 4.3"
 gem "jekyll-remote-theme"
+
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
+end
+
+# Required for Ruby 3.x compatibility
+gem "rexml"
+gem "webrick"
